@@ -23,7 +23,6 @@ RUN pip install --no-cache-dir -r backend/requirements.txt -r pipeline/requireme
 # (full pipeline/ is needed for pipeline.catalog.* and pipeline.config imports)
 COPY backend/ backend/
 COPY pipeline/ pipeline/
-COPY shared/ shared/
 
 # fastembed downloads models to ~/.cache/fastembed on first use.
 # We pre-download the BM25 model here so startup is instant in production.
