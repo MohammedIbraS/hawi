@@ -1,0 +1,5 @@
+.next
+.env.local
+*.md
+node_modules
+!node_modules/xlsx
