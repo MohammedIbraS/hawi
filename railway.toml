@@ -1,9 +1,6 @@
-# Railway config for the backend service.
-# The frontend service uses frontend/railway.toml.
-
 [build]
 builder = "DOCKERFILE"
-dockerfilePath = "backend/Dockerfile"
+dockerfilePath = "backend/Dockerfile.railway"
 
 [deploy]
 healthcheckPath = "/health"
