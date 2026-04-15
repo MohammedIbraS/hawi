@@ -1,0 +1,118 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-sahub}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-sahub_dev}
+      POSTGRES_DB: ${POSTGRES_DB:-saudi_health_hub}
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sahub"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  backend:
+    build:
+      context: .          # repo root — needed so pipeline/ is accessible
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    env_file: .env        # provides ANTHROPIC_API_KEY, JINA_API_KEY, JWT_SECRET, etc.
+    environment:
+      # Override localhost URLs from .env with internal Docker service names
+      DATABASE_URL: postgresql://${POSTGRES_USER:-sahub}:${POSTGRES_PASSWORD:-sahub_dev}@postgres:5432/${POSTGRES_DB:-saudi_health_hub}
+      QDRANT_URL: http://qdrant:6333
+      REDIS_URL: redis://redis:6379
+      CORS_ORIGINS: http://localhost:3000
+    volumes:
+      - fastembed_cache:/root/.cache/fastembed  # persist downloaded BM25 model
+      - pipeline_downloads:/app/pipeline/downloads  # persist scraped files across rebuilds
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+      redis:
+        condition: service_started
+    restart: unless-stopped
+
+  celery-worker:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile   
+    command: >
+      celery -A pipeline.tasks.celery_app.celery_app worker
+      --loglevel=info
+      --queues=pipeline
+      --concurrency=1
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-sahub}:${POSTGRES_PASSWORD:-sahub_dev}@postgres:5432/${POSTGRES_DB:-saudi_health_hub}
+      QDRANT_URL: http://qdrant:6333
+      REDIS_URL: redis://redis:6379
+    volumes:
+      - fastembed_cache:/root/.cache/fastembed
+      - pipeline_downloads:/app/pipeline/downloads
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+      redis:
+        condition: service_started
+    restart: unless-stopped
+
+  celery-beat:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    command: >
+      celery -A pipeline.tasks.celery_app.celery_app beat
+      --loglevel=info
+      --schedule=/tmp/celerybeat-schedule
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-sahub}:${POSTGRES_PASSWORD:-sahub_dev}@postgres:5432/${POSTGRES_DB:-saudi_health_hub}
+      QDRANT_URL: http://qdrant:6333
+      REDIS_URL: redis://redis:6379
+    depends_on:
+      - redis
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_BACKEND_URL: http://localhost:8000   
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  qdrant_data:
+  redis_data:
+  fastembed_cache:
+  pipeline_downloads:

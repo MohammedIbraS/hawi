@@ -1,0 +1,122 @@
+[
+  {
+    "q": 1,
+    "cp": 0.5,
+    "cr": 0.952,
+    "fa": 0.478,
+    "answer_preview": "",
+    "contexts_count": 0
+  },
+  {
+    "q": 2,
+    "cp": 0,
+    "cr": 0,
+    "fa": 0.81,
+    "answer_preview": "",
+    "contexts_count": 0
+  },
+  {
+    "q": 3,
+    "cp": 0,
+    "cr": 0.4,
+    "fa": 1.0,
+    "answer_preview": "",
+    "contexts_count": 0
+  },
+  {
+    "q": 4,
+    "cp": 0.756,
+    "cr": 1.0,
+    "fa": 1.0,
+    "answer_preview": "",
+    "contexts_count": 0
+  },
+  {
+    "q": 5,
+    "cp": 0.833,
+    "cr": 1.0,
+    "fa": 0.737,
+    "answer_preview": "",
+    "contexts_count": 0
+  },
+  {
+    "q": 6,
+    "cp": 0,
+    "cr": 0,
+    "fa": 0.818,
+    "answer_preview": "",
+    "contexts_count": 0
+  },
+  {
+    "q": 7,
+    "cp": 0.589,
+    "cr": 1.0,
+    "fa": 1.0,
+    "answer_preview": "",
+    "contexts_count": 0
+  },
+  {
+    "q": 8,
+    "cp": 0,
+    "cr": 0,
+    "fa": 1.0,
+    "answer_preview": "",
+    "contexts_count": 0
+  },
+  {
+    "q": 9,
+    "cp": 0,
+    "cr": 0.5,
+    "fa": 0.846,
+    "answer_preview": "",
+    "contexts_count": 0
+  },
+  {
+    "q": 10,
+    "cp": 0,
+    "cr": 0.333,
+    "fa": 0.818,
+    "answer_preview": "",
+    "contexts_count": 0
+  },
+  {
+    "q": 11,
+    "cp": 0,
+    "cr": 0,
+    "fa": 0.714,
+    "answer_preview": "",
+    "contexts_count": 0
+  },
+  {
+    "q": 12,
+    "cp": 0,
+    "cr": 0,
+    "fa": 0.88,
+    "answer_preview": "",
+    "contexts_count": 0
+  },
+  {
+    "q": 13,
+    "cp": 0,
+    "cr": 0,
+    "fa": 0.368,
+    "answer_preview": "",
+    "contexts_count": 0
+  },
+  {
+    "q": 14,
+    "cp": 0,
+    "cr": 0,
+    "fa": 0.867,
+    "answer_preview": "",
+    "contexts_count": 0
+  },
+  {
+    "q": 15,
+    "cp": 0.5,
+    "cr": 0.75,
+    "fa": 0.913,
+    "answer_preview": "",
+    "contexts_count": 0
+  }
+]

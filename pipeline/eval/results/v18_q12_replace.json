@@ -1,0 +1,155 @@
+{
+  "timestamp": "2026-03-18T17:17:29.181277+00:00",
+  "n_questions": 16,
+  "summary": {
+    "faithfulness": NaN,
+    "context_precision": 0.0,
+    "context_recall": NaN
+  },
+  "per_question": [
+    {
+      "user_input": "كم عدد مراكز السكري والغدد الصماء حسب المنطقة الصحية؟",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "يبلغ إجمالي مراكز السكري والغدد الصماء 31 مركزاً موزعة على المناطق الصحية. منطقة الرياض لديها 4 مراكز، والقصيم 3 مراكز، والحدود الشمالية 3 مراكز، والعاصمة المقدسة 2، والمدينة المنورة 2، وعسير 2، وجازان 2، وجدة 1، والطائف 1، والشرقية 1، والأحساء 1، وحفر الباطن 1، وبيشة 1، وتبوك 1، وحائل 1، ونجران 1، والباحة 1، والجوف 1، والقريات 1، والقنفذة 1.",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": NaN
+    },
+    {
+      "user_input": "What nursing workforce data is available in the MOH Statistical Yearbook?",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "The MOH Statistical Yearbook provides nursing workforce data including the number of nursing staff and midwives across all health regions and sectors (Ministry of Health, other governmental, private). Data is broken down by nationality (Saudi vs non-Saudi) and covers multiple years for trend analysis. The yearbook also tracks allied health personnel separately.",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": NaN
+    },
+    {
+      "user_input": "كم عدد مراكز الرعاية الصحية الأولية في مرافق وزارة الصحة حسب المنطقة الصحية؟",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "وفقاً للكتاب الإحصائي لوزارة الصحة 2023، يبلغ عدد مراكز الرعاية الصحية الأولية في منطقة الرياض 397 مركزاً، والعاصمة المقدسة 80 مركزاً، وجدة 94 مركزاً. وقد شهدت المناطق الصحية تغيراً في عدد المراكز خلال الفترة 2019-2023، إذ كانت منطقة الرياض 415 مركزاً عام 2019 وانخفضت إلى 397 مركزاً عام 2023.",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": NaN
+    },
+    {
+      "user_input": "What types of health resources statistics are covered in the MOH Statistical Yearbook?",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "The MOH Statistical Yearbook covers health resources including the number of hospitals, hospital beds, primary healthcare centers, and healthcare personnel such as physicians, nurses, pharmacists, and allied health workers. Statistics are broken down by health region and by nationality (Saudi vs non-Saudi).",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": NaN
+    },
+    {
+      "user_input": "ما هي إحصاءات التدريب الصحي لعام 2022؟",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "تقرير أنشطة التدريب لعام 2022 الصادر عن وزارة الصحة يتضمن إحصاءات البرامج التدريبية المنفذة للكوادر الصحية وأعداد المستفيدين من التدريب والتخصصات المختلفة التي شملها البرنامج التدريبي.",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": NaN
+    },
+    {
+      "user_input": "What health services and emergency facilities does MOH provide during the Hajj season?",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "Saudi Arabia provides comprehensive health services during Hajj season including preventive care at entry points, primary care at health centers, emergency room departments at hospitals in Makkah and Madinah, and specialized services such as cardiac catheterization and open heart surgery for pilgrims. The MOH yearbook dedicates a full chapter to Hajj health services statistics covering the last five years.",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": NaN
+    },
+    {
+      "user_input": "ما هي إحصاءات التدريب الصحي لعام 2023؟",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "وفقاً لتقرير أنشطة التدريب لعام 2023 الصادر عن وزارة الصحة، شملت برامج التدريب دورات الإنعاش القلبي الرئوي الأساسي (BLS) بعدد 16,534 متدرباً من خلال 1,335 دورة تدريبية، والإنعاش القلبي المتقدم للبالغين (ACLS) بعدد 1,845 متدرباً من خلال 178 دورة، بالإضافة إلى برامج متخصصة أخرى تشمل طوارئ الأطفال والإسعافات الأولية.",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": NaN
+    },
+    {
+      "user_input": "What are the standards and requirements for urgent care centers according to MOH policy?",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "The MOH Urgent Care Center Standard Policy (effective January 2025) aims to standardize Urgent Care Center (UCC) practice across Saudi Arabia and provide practical guidance. Stand-alone UCCs operate according to MOH regulation. The Urgent Care Service Line Lead (Emergency Service Lead in the MOH Cluster) oversees delivery and quality of medical services, coordinates patient care, and ensures operational standards. UCC design should prioritize efficient patient flow, accessibility, and the integration of necessary medical facilities and technologies to provide rapid, effective treatment.",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": NaN
+    },
+    {
+      "user_input": "ما هي معدلات تغطية التطعيمات والأمراض المعدية في المملكة العربية السعودية حسب الكتاب الإحصائي؟",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "وفقاً للكتاب الإحصائي لوزارة الصحة، تبلغ نسبة تغطية التطعيمات للأمراض المستهدفة أكثر من 95% وهي أعلى من المتوسطات العالمية. تتضمن البيانات معدلات الإصابة بالأمراض مثل شلل الأطفال والحصبة والسعال الديكي والدفتيريا لكل 100,000 من السكان خلال السنوات الأخيرة.",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": NaN
+    },
+    {
+      "user_input": "What hospital bed data does the MOH Statistical Yearbook report by health region?",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "The MOH Statistical Yearbook provides hospital bed statistics broken down by health region and health sector (MOH, other government, private). The data covers bed counts and distribution across all regions of Saudi Arabia. Trend data comparing current figures to previous years is also provided to show growth patterns.",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": NaN
+    },
+    {
+      "user_input": "What is the MOH budget as a percentage of Saudi Arabia's total government budget from 2019 to 2023?",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "According to the MOH Statistical Yearbook 2023, the MOH budget as a percentage of the total government budget was: 8.5% (93.7 billion SAR of 1,106 billion) in 2019, 9.9% (101.0B of 1,020B) in 2020, 10.4% (102.5B of 990B) in 2021, 11.2% (111.7B of 995B) in 2022, and 9.4% (105.0B of 1,114B) in 2023.",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": NaN
+    },
+    {
+      "user_input": "How many hospitals and hospital beds are in the Riyadh health region according to the MOH Statistical Yearbook 2023, broken down by sector?",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "According to the MOH Statistical Yearbook 2023, the Riyadh health region has 109 hospitals with 21,492 total beds. The breakdown by sector: MOH sector has 9,107 beds, the other governmental sector has 16 hospitals with 6,040 beds, and the private sector has 44 hospitals with 6,345 beds.",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": NaN
+    },
+    {
+      "user_input": "كيف يوزع الكتاب الإحصائي لوزارة الصحة إحصاءات الأطباء وأطباء الأسنان على القطاعات الصحية؟",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "يوفر الكتاب الإحصائي لوزارة الصحة بيانات تفصيلية عن أعداد الأطباء وأطباء الأسنان موزعة على القطاعات الصحية الثلاثة: وزارة الصحة والقطاع الحكومي الآخر والقطاع الخاص. تُصنَّف البيانات حسب المنطقة الصحية والجنس والجنسية (سعودي وغير سعودي) والتخصص الطبي.",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": NaN
+    },
+    {
+      "user_input": "What cardiac catheterization and open heart surgery statistics does MOH report for Hajj pilgrims?",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "The MOH Statistical Yearbook reports cardiac procedure statistics for Hajj pilgrims including cardiac catheterization rates and open heart surgery rates per 100,000 pilgrims over the last five years. The yearbook tracks these specialized cardiac services provided during the Hajj season across multiple years to show trends.",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": NaN
+    },
+    {
+      "user_input": "ما هي إحصاءات خدمات طب الأسنان في مرافق وزارة الصحة حسب المنطقة الصحية؟",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "وفقاً للكتاب الإحصائي لوزارة الصحة 2023، تتوزع خدمات طب الأسنان على المناطق الصحية. سجلت منطقة الرياض أعلى الأرقام: 94,336 حالة خلع أسنان إجمالاً (39,658 أسنان دائمة و54,678 أسنان لبنية)، و5,035 حالة جراحة عظام الفك والأسنان. كما تشمل البيانات مراكز طب الأسنان والعيادات لجميع مناطق المملكة.",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": NaN
+    },
+    {
+      "user_input": "What percentage of MOH physicians are Saudi nationals, and what is the total number of physicians employed by MOH in 2023?",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "According to the MOH Statistical Yearbook 2023, 51.4% of physicians employed by the Ministry of Health are Saudi nationals. The total number of MOH physicians in 2023 is 58,260, up from 55,487 in 2022 and 49,139 in 2019.",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": NaN
+    }
+  ]
+}

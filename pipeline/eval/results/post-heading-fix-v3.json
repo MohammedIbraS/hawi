@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-03-17T09:43:44.474351+00:00",
+  "n_questions": 3,
+  "summary": {
+    "faithfulness": 0.4166666666666667,
+    "context_precision": 0.16666666665,
+    "context_recall": 0.31746031746031744
+  },
+  "per_question": [
+    {
+      "user_input": "كم عدد مراكز السكري والغدد الصماء حسب المنطقة الصحية؟",
+      "retrieved_contexts": [
+        "Table 2-6 |  |  |  |  |  | 6-٢ لودج |  |  |  |  |  |  | \nnoigeR\nhtlaeH | retneC\nمركز\nenicideM\nطب\nشرعي\ncisneroF | عيادات cinilC\nnoitasseC\nالإقلاع\nعن\ngnikomS\nالتدخين | مركز yrtne\nمراقبة\nta\nsretneC\nصحية\nstniop\nوقائية htlaeH\nبالمنافذ lortnoC | yrotarobaL\nمختبر\nمركزي/\nlanoigeR\nإقليمي\n/lartneC | retnec\nمركز\nتأهيل noitatilibaheR\nطبي | مركز\nretneC\nطب\nlatneD\nأسنان | مركز/وحدة\ntinU\n/retneC\nغسيل\nsisylaiD\nكلوي | sretneC\nمراكز\nالسكري ygolonircodnE\nوالغدد\nالصماء &\nsetebaiD | retneC\nمركز\nygolocnO\nأورام | retneC\nمركز\nygoloidraC\nقلب | مستشفى\nlatipsoH | مركز\nرعاية\nCHP\nصحية\nأولية | المنطقة\nالصحية\nRiyadh | 1 | 91 | 1 | 1 | 1 | 5 | 39 | 3 | 1 | 1 | 49 | 390 | ضايرلا\nThe Holy\nCapital | 1 | 19 | 0 | 1 | 1 | 3 | 7 | 2 | 1 | 1 | 10 | 77 | ةمصاعلا\nةسدقملا\nJeddah | 1 | 53 | 3 | 1 | 1 | 3 | 10 | 1 | 0 | 0 | 13 | 92 | ةدج\nTa`if | 1 | 27 | 1 | 1 | 0 | 1 | 14 | 1 | 0 | 0 | 16 | 109 | فئاطلا\nMadinah | 1 | 34 | 5 | 1 | 0 | 3 | 16 | 1 | 0 | 1 | 18 | 144 | ةنيدملا\nةرونملا\nQaseem | 1 | 23 | 1 | 1 | 0 | 5 | 20 | 2 | 1 | 1 | 19 | 155 | ميصقلا\nEastern | 1 | 58 | 8 | 1 | 1 | 2 | 17 | 1 | 1 | 1 | 21 | 119 | ةيقرشلا\nAl-Ahsa | 1 | 22 | 1 | 0 | 0 | 2 | 5 | 2 | 0 | 1 | 10 | 63 | ءاسحلأا\nHafr Al-Baten | 1 | 8 | 1 | 1 | 0 | 1 | 3 | 1 | 0 | 0 | 7 | 36 | نطابلا رفح\nAseer | 1 | 35 | 1 | 1 | 1 | 5 | 20 | 1 | 0 | 1 | 20 | 213 | ريسع\nBishah | 1 | 8 | 0 | 0 | 1 | 1 | 5 | 1 | 0 | 0 | 8 | 64 | ةشيب\nTabouk | 1 | 21 | 4 | 0 | 0 | 1 | 8 | 1 | 0 | 0 | 12 | 90 | كوبت\nHa`il | 1 | 20 | 1 | 1 | 1 | 1 | 10 | 1 | 0 | 1 | 14 | 109 | لئاح\nNorthern | 1 | 10 | 1 | 1 | 1 | 3 | 6 | 3 | 0 | 1 | 11 | 41 | دودحلا\nةيلامشلا\nJazan | 1 | 38 | 2 | 1 | 0 | 1 | 14 | 2 | 0 | 0 | 21 | 155 | نازاج\nNajran | 1 | 17 | 1 | 1 | 1 | 2 | 7 | 1 | 0 | 1 | 10 | 68 | نارجن\nAl- Bahah | 1 | 13 | 0 | 1 | 0 | 2 | 8 | 1 | 0 | 0 | 10 | 94 | ةحابلا\nAl-Jouf | 1 | 16 | 1 | 1 | 1 | 2 | 6 | 1 | 0 | 0 | 9 | 41 | فوجلا\nQurayyat | 1 | 13 | 1 | 1 | 1 | 1 | 2 | 1 | 0 | 0 | 4 | 17 | تايرقلا\nQunfudah | 1 | 8 | 0 | 1 | 0 | 1 | 4 | 1 | 0 | 0 | 5 | 44 | ةذفنقلا\nTotal | 20 | 534 | 33 | 17 | 11 | 45 | 221 | 28 | 4 | 10 | 287 | 2121 | ىلامجلإا",
+        "Health Region | بط زكرم\nيعرش\nForensic\nMedicine\nCenter | علاقلإا تادايع\nنيخدتلا نع\nSmoking\nCessation\nClinic | ةبقارم زكرم\nةيئاقو ةيحص\nذفانملاب\nControl Health\nCenters at\nentry points | /يزكرم ربتخم\nيميلقإ\nCentral/\nRegional\nLaboratory | يبط ليهأت زكرم\nRehabilitation\ncenter | نانسأ بط زكرم\nDental Center | ةدحو/زكرم\nيولك ليسغ\nDialysis\nCenter/ Unit | يركسلا زكارم\nءامصلا ددغلاو\nDiabetes &\nEndocrinology\nCenters | ماروأ زكرم\nOncology\nCenter | بلق زكرم\nCardiology\nCenter | ىفشتسم\nHospital | ةيحص ةياعر زكرم\nةيلوأ\nPHC | ةيحصلا ةقطنملا\nRiyadh | 1 | 156 | 1 | 1 | 1 | 5 | 40 | 4 | 2 | 2 | 49 | 397 | ضايرلا\nThe Holy Capital | 1 | 13 | 0 | 1 | 1 | 3 | 6 | 2 | 2 | 2 | 10 | 80 | ةسدقملا ةمصاعلا\nJeddah | 1 | 38 | 3 | 1 | 1 | 3 | 10 | 1 | 1 | 0 | 14 | 94 | ةدج\nTaif | 1 | 20 | 1 | 1 | 0 | 1 | 13 | 1 | 1 | 0 | 16 | 107 | فئاطلا\nMedinah | 1 | 41 | 5 | 1 | 0 | 3 | 16 | 2 | 1 | 1 | 18 | 144 | ةرونملا ةنيدملا\nQaseem | 1 | 23 | 1 | 1 | 0 | 5 | 19 | 3 | 1 | 1 | 19 | 153 | ميصقلا\nEastern | 1 | 63 | 9 | 1 | 1 | 2 | 16 | 1 | 1 | 1 | 21 | 120 | ةيقرشلا\nAl-Ahsa | 1 | 12 | 1 | 0 | 0 | 2 | 5 | 1 | 1 | 1 | 10 | 63 | ءاسحلأا\nHafr Al-Baten | 1 | 13 | 1 | 1 | 0 | 1 | 4 | 1 | 1 | 0 | 7 | 38 | نطابلا رفح\nAseer | 1 | 25 | 1 | 1 | 1 | 5 | 21 | 2 | 1 | 1 | 20 | 213 | ريسع\nBishah | 1 | 8 | 0 | 0 | 1 | 1 | 5 | 1 | 0 | 0 | 8 | 63 | ةشيب\nTabouk | 1 | 36 | 4 | 0 | 0 | 1 | 8 | 1 | 1 | 0 | 12 | 82 | كوبت\nHail | 1 | 18 | 1 | 1 | 1 | 1 | 10 | 1 | 1 | 1 | 14 | 109 | لئاح\nNorthern Borders | 1 | 30 | 1 | 1 | 1 | 3 | 6 | 3 | 1 | 1 | 11 | 42 | ةيلامشلا دودحلا\nJazan | 1 | 51 | 3 | 1 | 0 | 1 | 17 | 2 | 1 | 0 | 22 | 169 | نازاج\nNajran | 1 | 11 | 2 | 1 | 1 | 1 | 7 | 1 | 1 | 1 | 10 | 68 | نارجن\nAl- Bahah | 1 | 49 | 0 | 1 | 0 | 2 | 8 | 1 | 0 | 0 | 10 | 92 | ةحابلا\nAl- Jouf | 1 | 14 | 1 | 1 | 1 | 2 | 6 | 1 | 1 | 0 | 9 | 40 | فوجلا\nQurayyat | 1 | 2 | 1 | 1 | 1 | 1 | 2 | 1 | 0 | 0 | 5 | 16 | تايرقلا\nQunfudah | 1 | 7 | 0 | 1 | 0 | 1 | 4 | 1 | 0 | 0 | 5 | 36 | ةذفنقلا\nTotal | 20 | 630 | 36 | 17 | 11 | 44 | 223 | 31 | 18 | 12 | 290 | 2126 | ىلامجلإا",
+        "for the year 2012. There are 206 artificial kidney centers in total, 69.4% of which are within the juris-",
+        "ﺔﺤﺼﻟا ةرازو تﺎﻴﻔﺸﺘﺴﻤﺑ ىﺮﻜﺴﻟا تادﺎﻴﻌﻟ ﻦﻴﻌﺟاﺮﻤﻟا تارﺎﻳز :14-4لوﺪﺟ\n(م 2017) ـﻫ 1438 مﺎﻋ ﺔﻘﻄﻨﻤﻟاو ﺔﻴﺴﻨﺠﻟاو ﺲﻨﺠﻟا ﺐﺴﺣ\nTable 4-14 : Visits to Diabetic Clinics , MOH Hospitals by Sex , Nationality\nand Region,1438 H (2017 G). |  |  |  | \nﻲﻟﺎﻤﺟ…ا\nTotal | يدﻮﻌﺳ ﺮﻴﻏ\nNS |  | يدﻮﻌﺳ\nS ﺔﻘﻄﻨﻤﻟا\nﻰﺜﻧأ ﺮﻛذ Region\nFemale Male | \n | ﻰﺜﻧأ\nFemale | ﺮﻛذ\nMale | ﻰﺜﻧأ\nFemale | \n37411 | 1314 | 1614 | 20845 | 13638 Riyadh ضﺎﻳﺮﻟا\n49745 | 1825 | 3233 | 24366 | 20321 Makkah ﺔﻣﺮﻜﻤﻟا ﺔﻜﻣ\n26268 | 838 | 750 | 12628 | 12052 Jeddah ةﺪﺟ\n32855 | 967 | 1920 | 17163 | 12805 Ta`if ﻒﺋﺎﻄﻟا\n24955 | 307 | 479 | 12342 | 11827 Medinah ةرﻮﻨﻤﻟا ﺔﻨﻳﺪﻤﻟا\n61673 | 1545 | 1974 | 35058 | 23096 Qaseem ﻢﻴﺼﻘﻟا\n21643 | 560 | 1604 | 10625 | 8854 Eastern ﺔﻴﻗﺮﺸﻟا\n12506 | 104 | 94 | 7925 | 4383 Al-Ahsa ءﺎﺴﺣﻷا\n12959 | 5 | 206 | 7980 | 4768 Hafr Al-Baten ﻦﻃﺎﺒﻟا ﺮﻔﺣ\n31322 | 335 | 548 | 13711 | 16728 Aseer ﺮﻴﺴﻋ\n7508 | 113 | 156 | 4138 | 3101 Bishah ﺔﺸﻴﺑ\n7593 | 158 | 462 | 4010 | 2963 Tabouk كﻮﺒﺗ\n6555 | 83 | 134 | 3978 | 2360 Ha`il ﻞﺋﺎﺣ\n22550 | 769 | 1028 | 12215 | 8538 Northern ﺔﻴﻟﺎﻤﺸﻟا دوﺪﺤﻟا\n35007 | 1758 | 1855 | 15906 | 15488 Jazan نازﺎﺟ\n11344 | 551 | 1253 | 5008 | 4532 Najran ناﺮﺠﻧ\n18372 | 155 | 314 | 9499 | 8404 Al-Bahah ﺔﺣﺎﺒﻟا\n9754\n3787 | 62\n178 | 81\n233 | 5237\n1676 | 4374 Al-Jouf فﻮﺠﻟا\n1700 Qurrayat *تﺎﻳﺮﻘﻟا\n5528\n439335 | 22\n11649 | 188\n18126 | 2690\n227000 | 2628 Qunfudah ةﺬﻔﻨﻘﻟا\n182560 Total عﻮﻤﺠﻤﻟا",
+        "for the year 2012. There are 206 artificial kidney centers in total, 69.4% of which are within the juris-"
+      ],
+      "response": "## مراكز السكري والغدد الصماء حسب المنطقة الصحية\n\nاستناداً إلى أحدث البيانات المتاحة، يوضح الجدول التالي عدد مراكز السكري والغدد الصماء في مناطق المملكة الصحية لعام 2023م:\n\n| المنطقة الصحية | عدد مراكز السكري والغدد الصماء |\n|---|---|\n| الرياض | 4 |\n| العاصمة المقدسة | 2 |\n| جدة | 1 |\n| الطائف | 1 |\n| المدينة المنورة | 2 |\n| القصيم | 3 |\n| الشرقية | 1 |\n| الأحساء | 1 |\n| حفر الباطن | 1 |\n| عسير | 2 |\n| بيشة | 1 |\n| تبوك | 1 |\n| حائل | 1 |\n| الحدود الشمالية | 3 |\n| جازان | 2 |\n| نجران | 1 |\n| الباحة | 1 |\n| الجوف | 1 |\n| القريات | 1 |\n| القنفذة | 1 |\n| **الإجمالي** | **31** |\n\n> **المصدر:** وزارة الصحة — الكتاب الإحصائي السنوي 2023م، جدول المرافق الصحية التابعة لوزارة الصحة حسب المنطقة الصحية [2].\n\n**ملاحظة:** تُعدّ هذه البيانات الأحدث المتاحة في السياق، وتُظهر ارتفاعاً في الإجمالي من **28 مركزاً** عام 2021م [1] إلى **31 مركزاً** عام 2023م [2].",
+      "reference": "يبلغ إجمالي مراكز السكري والغدد الصماء 31 مركزاً موزعة على المناطق الصحية. منطقة الرياض لديها 4 مراكز، والقصيم 3 مراكز، والحدود الشمالية 3 مراكز، والعاصمة المقدسة 2، والمدينة المنورة 2، وعسير 2، وجازان 2، وجدة 1، والطائف 1، والشرقية 1، والأحساء 1، وحفر الباطن 1، وبيشة 1، وتبوك 1، وحائل 1، ونجران 1، والباحة 1، والجوف 1، والقريات 1، والقنفذة 1.",
+      "faithfulness": 0.4166666666666667,
+      "context_precision": 0.49999999995,
+      "context_recall": 0.9523809523809523
+    },
+    {
+      "user_input": "How many diabetes and endocrine centers are there in Saudi Arabia and how are they distributed?",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "There are 31 diabetes and endocrine centers in Saudi Arabia distributed across health regions. Riyadh has the most with 4 centers, followed by Qassim and Northern Borders with 3 centers each. Makkah, Madinah, Asir, and Jazan each have 2 centers. The remaining regions including Jeddah, Taif, Eastern Province, Al-Ahsa, Hafar Al-Batin, Bisha, Tabuk, Hail, Najran, Baha, Al-Jouf, Al-Qurayyat, and Al-Qunfudhah each have 1 center.",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    {
+      "user_input": "ما هي أبرز مؤشرات الصحة الرئيسية في الكتاب الإحصائي لوزارة الصحة 2023؟",
+      "retrieved_contexts": [],
+      "response": "",
+      "reference": "يتضمن الكتاب الإحصائي لوزارة الصحة 2023 مؤشرات صحية شاملة تشمل: الموارد الصحية مثل عدد المستشفيات والأسرة ومراكز الرعاية الأولية وأعداد الكوادر الصحية، ومؤشرات الصحة العامة كمعدل وفيات الأمهات والرضع، والنشاط الصحي يشمل عدد العمليات والولادات والزيارات، فضلاً عن إحصاءات الحج والبرامج الوقائية.",
+      "faithfulness": NaN,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    }
+  ]
+}

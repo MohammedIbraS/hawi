@@ -1,0 +1,10 @@
+# Normalize line endings to LF in the repo; checkout as-is on all platforms
+* text=auto eol=lf
+
+# Binary files — never touch line endings
+*.png binary
+*.jpg binary
+*.ico binary
+*.pdf binary
+*.woff2 binary
+*.ttf binary

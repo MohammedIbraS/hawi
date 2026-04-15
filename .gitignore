@@ -1,0 +1,44 @@
+# Environment — never commit secrets
+.env
+.env.local
+.env.production
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+.next/
+out/
+.turbo/
+
+# Data (never commit raw documents or large binary files)
+pipeline/data/
+pipeline/downloads/
+
+# Eval cache files (large JSON with raw RAG outputs)
+pipeline/eval/cache/
+
+# Claude Code project config
+.claude/
+
+# Temp / scratch files
+tmp_*.py
+maternal_test.json
+nurses_test.json
+target_findings.json
+
+# Misc
+.DS_Store
+*.log
+*.tmp

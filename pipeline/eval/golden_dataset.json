@@ -1,0 +1,290 @@
+[
+  {
+    "question": "كم عدد مراكز السكري والغدد الصماء حسب المنطقة الصحية؟",
+    "ground_truth": "يبلغ إجمالي مراكز السكري والغدد الصماء 31 مركزاً موزعة على المناطق الصحية. منطقة الرياض لديها 4 مراكز، والقصيم 3 مراكز، والحدود الشمالية 3 مراكز، والعاصمة المقدسة 2، والمدينة المنورة 2، وعسير 2، وجازان 2، وجدة 1، والطائف 1، والشرقية 1، والأحساء 1، وحفر الباطن 1، وبيشة 1، وتبوك 1، وحائل 1، ونجران 1، والباحة 1، والجوف 1، والقريات 1، والقنفذة 1.",
+    "entity": "MOH",
+    "language": "ar"
+  },
+  {
+    "question": "How has the percentage of Saudi physicians in MOH changed from 2019 to 2023 according to the Statistical Yearbook?",
+    "ground_truth": "According to the MOH Statistical Yearbook 2023, the percentage of Saudi physicians among total MOH physicians increased steadily from 39.9% (19,615 Saudi of 49,139 total) in 2019, to 40.6% in 2020, 44.2% in 2021, 47.5% in 2022, and reached 51.4% (29,960 Saudi of 58,260 total) in 2023, reflecting significant progress in Saudization of the medical workforce.",
+    "entity": "MOH",
+    "language": "en"
+  },
+  {
+    "question": "كم عدد مراكز الرعاية الصحية الأولية في مرافق وزارة الصحة حسب المنطقة الصحية؟",
+    "ground_truth": "وفقاً للكتاب الإحصائي لوزارة الصحة 2023، يبلغ عدد مراكز الرعاية الصحية الأولية في منطقة الرياض 397 مركزاً، والعاصمة المقدسة 80 مركزاً، وجدة 94 مركزاً. وقد شهدت المناطق الصحية تغيراً في عدد المراكز خلال الفترة 2019-2023، إذ كانت منطقة الرياض 415 مركزاً عام 2019 وانخفضت إلى 397 مركزاً عام 2023.",
+    "entity": "MOH",
+    "language": "ar"
+  },
+  {
+    "question": "How many MOH hospitals and beds are there in Riyadh, Jeddah, and Medinah health regions according to the 2023 Statistical Yearbook?",
+    "ground_truth": "According to the MOH Statistical Yearbook 2023, Riyadh health region has 49 MOH hospitals with 9,107 beds, Jeddah health region has 14 hospitals with 3,491 beds, and Medinah health region has 18 hospitals with 3,118 beds. The Holy Capital has 10 hospitals with 2,694 beds and Taif has 16 hospitals with 2,640 beds.",
+    "entity": "MOH",
+    "language": "en"
+  },
+  {
+    "question": "ما هي إحصاءات التدريب الصحي لعام 2022؟",
+    "ground_truth": "تقرير أنشطة التدريب لعام 2022 الصادر عن وزارة الصحة يتضمن إحصاءات البرامج التدريبية المنفذة للكوادر الصحية وأعداد المستفيدين من التدريب والتخصصات المختلفة التي شملها البرنامج التدريبي.",
+    "entity": "MOH",
+    "language": "ar"
+  },
+  {
+    "question": "How many MOH hospitals and beds are in Jazan, Tabuk, and Hail health regions according to the 2023 Statistical Yearbook?",
+    "ground_truth": "According to the MOH Statistical Yearbook 2023, Jazan health region has 22 MOH hospitals with 2,915 beds, Tabuk has 12 hospitals with 1,920 beds, and Hail has 14 hospitals with 1,940 beds.",
+    "entity": "MOH",
+    "language": "en"
+  },
+  {
+    "question": "ما هي إحصاءات التدريب الصحي لعام 2023؟",
+    "ground_truth": "وفقاً لتقرير أنشطة التدريب لعام 2023 الصادر عن وزارة الصحة، شملت برامج التدريب دورات الإنعاش القلبي الرئوي الأساسي (BLS) بعدد 16,534 متدرباً من خلال 1,335 دورة تدريبية، والإنعاش القلبي المتقدم للبالغين (ACLS) بعدد 1,845 متدرباً من خلال 178 دورة، بالإضافة إلى برامج متخصصة أخرى تشمل طوارئ الأطفال والإسعافات الأولية.",
+    "entity": "MOH",
+    "language": "ar"
+  },
+  {
+    "question": "What are the standards and requirements for urgent care centers according to MOH policy?",
+    "ground_truth": "The MOH Urgent Care Center Standard Policy (effective January 2025) aims to standardize Urgent Care Center (UCC) practice across Saudi Arabia and provide practical guidance. Stand-alone UCCs operate according to MOH regulation. The Urgent Care Service Line Lead (Emergency Service Lead in the MOH Cluster) oversees delivery and quality of medical services, coordinates patient care, and ensures operational standards. UCC design should prioritize efficient patient flow, accessibility, and the integration of necessary medical facilities and technologies to provide rapid, effective treatment.",
+    "entity": "MOH",
+    "language": "en"
+  },
+  {
+    "question": "ما هي معدلات تغطية التطعيمات والأمراض المعدية في المملكة العربية السعودية حسب الكتاب الإحصائي؟",
+    "ground_truth": "وفقاً للكتاب الإحصائي لوزارة الصحة، تبلغ نسبة تغطية التطعيمات للأمراض المستهدفة أكثر من 95% وهي أعلى من المتوسطات العالمية. تتضمن البيانات معدلات الإصابة بالأمراض مثل شلل الأطفال والحصبة والسعال الديكي والدفتيريا لكل 100,000 من السكان خلال السنوات الأخيرة.",
+    "entity": "MOH",
+    "language": "ar"
+  },
+  {
+    "question": "How many MOH hospitals and beds are in Eastern Province, Al-Ahsa, and Aseer health regions according to the 2023 Statistical Yearbook?",
+    "ground_truth": "According to the MOH Statistical Yearbook 2023, Eastern health region has 21 MOH hospitals with 3,456 beds, Al-Ahsa has 10 hospitals with 2,055 beds, and Aseer has 20 hospitals with 2,330 beds.",
+    "entity": "MOH",
+    "language": "en"
+  },
+  {
+    "question": "What is the MOH budget as a percentage of Saudi Arabia's total government budget from 2019 to 2023?",
+    "ground_truth": "According to the MOH Statistical Yearbook 2023, the MOH budget as a percentage of the total government budget was: 8.5% (93.7 billion SAR of 1,106 billion) in 2019, 9.9% (101.0B of 1,020B) in 2020, 10.4% (102.5B of 990B) in 2021, 11.2% (111.7B of 995B) in 2022, and 9.4% (105.0B of 1,114B) in 2023.",
+    "entity": "MOH",
+    "language": "en"
+  },
+  {
+    "question": "What was the total MOH budget in SAR billions from 2019 to 2023 according to the Statistical Yearbook?",
+    "ground_truth": "According to the MOH Statistical Yearbook 2023, the MOH budget allocation in SAR billions over the last five years was: 93.7 billion in 2019, 101.0 billion in 2020, 102.5 billion in 2021, 111.7 billion in 2022, and 105.0 billion in 2023.",
+    "entity": "MOH",
+    "language": "en"
+  },
+  {
+    "question": "What is the total number of dentists employed by MOH in 2023 and what percentage are Saudi nationals?",
+    "ground_truth": "According to the MOH Statistical Yearbook 2023, the total number of dentists employed by MOH in 2023 was 7,056, of whom 6,527 (approximately 92.5%) were Saudi nationals and 529 were non-Saudi nationals.",
+    "entity": "MOH",
+    "language": "en"
+  },
+  {
+    "question": "According to the MOH Statistical Yearbook, how did the cardiac catheterization rate for Hajj pilgrims change over the last five years?",
+    "ground_truth": "According to the MOH Statistical Yearbook 2023, the rate of cardiac catheterization performed for Hajj pilgrims over the last five years increased by 25% per 100,000 pilgrims.",
+    "entity": "MOH",
+    "language": "en"
+  },
+  {
+    "question": "How many dental extraction cases were performed in Riyadh health region according to the MOH Statistical Yearbook 2023?",
+    "ground_truth": "According to the MOH Statistical Yearbook 2023, Riyadh health region recorded 94,336 total dental extraction cases, comprising 39,658 permanent teeth extractions and 54,678 deciduous (milk) teeth extractions, along with 5,035 faciodental surgery cases.",
+    "entity": "MOH",
+    "language": "en"
+  },
+  {
+    "question": "What percentage of MOH physicians are Saudi nationals, and what is the total number of physicians employed by MOH in 2023?",
+    "ground_truth": "According to the MOH Statistical Yearbook 2023, the total number of physicians employed by the Ministry of Health is 58,260, of which 29,960 (51.4%) are Saudi nationals and 28,300 are non-Saudi. Saudi male physicians number 17,709 and Saudi female physicians number 12,251.",
+    "entity": "MOH",
+    "language": "en"
+  },
+  {
+    "question": "What is the disability prevalence rate in Saudi Arabia according to GASTAT?",
+    "ground_truth": "According to GASTAT's Persons with Disability Statistics Report 2023, the prevalence of disability and difficulty among the total population in Saudi Arabia was 4.2%, based on the Saudi Census 2022. The rate among Saudi nationals was 5.9% and among non-Saudis was 1.8%.",
+    "entity": "GASTAT",
+    "language": "en"
+  },
+  {
+    "question": "What percentage of births in Saudi Arabia were attended by skilled health personnel according to GASTAT?",
+    "ground_truth": "According to GASTAT's Women Health and Reproductive Care Statistics 2023, 99.8% of births in Saudi Arabia were attended by skilled health personnel.",
+    "entity": "GASTAT",
+    "language": "en"
+  },
+  {
+    "question": "What percentage of adults in Saudi Arabia access their electronic medical records online according to GASTAT's Healthcare Statistics 2025?",
+    "ground_truth": "According to GASTAT's Healthcare Statistics 2025 (National Health Survey 2025), 30.9% of adults aged 15 years and above accessed their electronic medical records online, and 30.8% used the internet to obtain health-related information.",
+    "entity": "GASTAT",
+    "language": "en"
+  },
+  {
+    "question": "What percentage of adults in Saudi Arabia have a very good or good perception of their health according to GASTAT's Health Status Statistics 2023?",
+    "ground_truth": "According to GASTAT's Health Status Statistics 2023, 53% of adults (15 years and above) in Saudi Arabia have a very good or good perception of their health status.",
+    "entity": "GASTAT",
+    "language": "en"
+  },
+  {
+    "question": "What percentage of adults in Saudi Arabia have private health insurance according to GASTAT's Health Care Statistics 2023?",
+    "ground_truth": "According to GASTAT's Health Care Statistics 2023, 37.5% of adults (15 years and above) have private health insurance, while 19.5% of children (under 15 years) have private health insurance for basic healthcare expenses.",
+    "entity": "GASTAT",
+    "language": "en"
+  },
+  {
+    "question": "What percentage of births in Saudi Arabia were C-section deliveries according to GASTAT's Women Health 2023?",
+    "ground_truth": "According to GASTAT's Women Health and Reproductive Care Statistics 2023, 34.6% of total births in Saudi Arabia were C-section deliveries, while 64.9% were normal deliveries.",
+    "entity": "GASTAT",
+    "language": "en"
+  },
+  {
+    "question": "According to GASTAT's Women Health and Reproductive Care Statistics 2025, what percentage of mothers had at least four prenatal visits during pregnancy?",
+    "ground_truth": "According to GASTAT's Women Health and Reproductive Care Statistics 2025, 89.6% of mothers had at least four visits to a healthcare provider during pregnancy, with an average of 7.8 prenatal visits per pregnancy.",
+    "entity": "GASTAT",
+    "language": "en"
+  },
+  {
+    "question": "What is the prevalence of obesity among adults in Saudi Arabia according to GASTAT's Health Determinants Statistics 2023?",
+    "ground_truth": "According to GASTAT's Health Determinants Statistics 2023 (National Health Survey), the prevalence of obesity among adults (15 years and above) was about 24% (23.7% based on BMI≥30). The percentage of ideal weight was significantly higher among females (about 39.6%), with no significant difference between males and females in obesity rates.",
+    "entity": "GASTAT",
+    "language": "en"
+  },
+  {
+    "question": "What percentage of mothers breastfed their newborns within the first hour after birth according to GASTAT's Women Health 2025?",
+    "ground_truth": "According to GASTAT's Women Health and Reproductive Care Statistics 2025, 59.8% of mothers breastfed their newborns within the first hour after birth.",
+    "entity": "GASTAT",
+    "language": "en"
+  },
+  {
+    "question": "What percentage of adults in Saudi Arabia received a dental consultation within the past 12 months according to GASTAT's Healthcare Statistics 2025?",
+    "ground_truth": "According to GASTAT's Healthcare Statistics 2025, 11.4% of adults (15 years and above) received dental consultation within the past 12 months. Similarly, 11.7% of children (under 15 years) received dental consultation within the past 12 months.",
+    "entity": "GASTAT",
+    "language": "en"
+  },
+  {
+    "question": "What percentage of adults aged 15 and above in Saudi Arabia have coverage for their basic healthcare expenses according to GASTAT's Healthcare Statistics 2025?",
+    "ground_truth": "According to GASTAT's Healthcare Statistics 2025 (National Health Survey 2025), 95.7% of adults (15 years and above) have coverage for their basic healthcare expenses.",
+    "entity": "GASTAT",
+    "language": "en"
+  },
+  {
+    "question": "What percentage of children under 15 years in Saudi Arabia have coverage for their basic healthcare expenses according to GASTAT's Healthcare Statistics 2025?",
+    "ground_truth": "According to GASTAT's Healthcare Statistics 2025 (National Health Survey 2025), 98.3% of children (under 15 years) have coverage for their basic healthcare expenses, whether through the government Ministry of Health, other governmental entities such as university and military hospitals, or private health insurance.",
+    "entity": "GASTAT",
+    "language": "en"
+  },
+  {
+    "question": "What percentage of adults had unmet healthcare needs according to GASTAT's Health Care Statistics 2023?",
+    "ground_truth": "According to GASTAT's Health Care Statistics 2023, about 5% of adults (15 years and above) had unmet healthcare needs for reasons related to the healthcare system. Additionally, about 9.3% of adults had unmet needs specifically for dental care.",
+    "entity": "GASTAT",
+    "language": "en"
+  },
+  {
+    "question": "What is the total number of MOH nurses in 2023 and how many are Saudi nationals?",
+    "ground_truth": "According to the MOH Statistical Yearbook 2023, the total number of nurses employed by MOH (in MOH hospitals) in 2023 was 108,753, of which 56,048 were Saudi nationals (approximately 51.5%) and 52,705 were non-Saudi nationals.",
+    "entity": "MOH",
+    "language": "en"
+  },
+  {
+    "question": "What are the total number of MOH hospitals and beds in Qaseem, Northern Borders, and Najran health regions according to the 2023 Statistical Yearbook?",
+    "ground_truth": "According to the MOH Statistical Yearbook 2023, Qaseem health region has 19 MOH hospitals with 3,324 beds, Northern Borders has 11 hospitals with 1,460 beds, and Najran has 10 hospitals with 1,300 beds.",
+    "entity": "MOH",
+    "language": "en"
+  },
+  {
+    "question": "What are the total number of MOH hospitals and beds in Al-Bahah, Al-Jouf, and Qunfudah health regions according to the 2023 Statistical Yearbook?",
+    "ground_truth": "According to the MOH Statistical Yearbook 2023, Al-Bahah health region has 10 MOH hospitals with 1,295 beds, Al-Jouf has 9 hospitals with 1,330 beds, and Qunfudah has 5 hospitals with 400 beds.",
+    "entity": "MOH",
+    "language": "en"
+  },
+  {
+    "question": "ما هو عدد مراكز الرعاية الصحية الأولية في كل منطقة صحية حسب الكتاب الإحصائي 2023؟",
+    "ground_truth": "وفقاً للكتاب الإحصائي لوزارة الصحة 2023، يبلغ إجمالي مراكز الرعاية الصحية الأولية في مرافق وزارة الصحة 2,126 مركزاً. أكبر المناطق هي عسير بـ 213 مركزاً، تليها الرياض 397، والمدينة المنورة 144، والقصيم 153. وتأتي الأحساء بـ 63 مركزاً، وحفر الباطن 38، والقنفذة 36.",
+    "entity": "MOH",
+    "language": "ar"
+  },
+  {
+    "question": "According to GASTAT's Health Care Statistics 2025, what percentage of children under 15 received dental consultation in the past 12 months?",
+    "ground_truth": "According to GASTAT's Healthcare Statistics 2025 (National Health Survey 2025), 11.7% of children (under 15 years) received dental consultation within the past 12 months.",
+    "entity": "GASTAT",
+    "language": "en"
+  },
+  {
+    "question": "وفقاً للهيئة العامة للإحصاء، ما هي نسبة انتشار السمنة بين البالغين في المملكة العربية السعودية؟",
+    "ground_truth": "وفقاً لإحصاءات المحددات الصحية للهيئة العامة للإحصاء 2023 (المسح الصحي الوطني)، بلغت نسبة انتشار السمنة بين البالغين (15 سنة فأكثر) في المملكة العربية السعودية نحو 24٪ (23.7٪ بناءً على مؤشر كتلة الجسم ≥30). وكانت نسبة الوزن المثالي أعلى بشكل ملحوظ لدى الإناث (نحو 39.6٪).",
+    "entity": "GASTAT",
+    "language": "ar"
+  },
+  {
+    "question": "ما نسبة الولادات التي جرت في المستشفيات الحكومية وفقاً للهيئة العامة للإحصاء؟",
+    "ground_truth": "وفقاً لإحصاءات صحة المرأة والرعاية الإنجابية للهيئة العامة للإحصاء 2025، جرت 68.2٪ من الولادات في المستشفيات الحكومية، و30.3٪ في المستشفيات الخاصة، و1.5٪ في أماكن أخرى.",
+    "entity": "GASTAT",
+    "language": "ar"
+  },
+  {
+    "question": "كم نسبة البالغين الذين يحصلون على تغطية لنفقات الرعاية الصحية الأساسية وفقاً للهيئة العامة للإحصاء؟",
+    "ground_truth": "وفقاً لإحصاءات الرعاية الصحية للهيئة العامة للإحصاء 2025 (المسح الصحي الوطني 2025)، يحصل 95.7٪ من البالغين (15 سنة فأكثر) على تغطية لنفقات الرعاية الصحية الأساسية، كما تحصل 98.3٪ من الأطفال (أقل من 15 سنة) على هذه التغطية.",
+    "entity": "GASTAT",
+    "language": "ar"
+  },
+  {
+    "question": "According to GASTAT's Women Health and Reproductive Care Statistics 2025, what is the average number of prenatal visits per pregnancy?",
+    "ground_truth": "According to GASTAT's Women Health and Reproductive Care Statistics 2025, the average number of prenatal visits per pregnancy was 7.8 visits, and 89.6% of mothers had at least four visits to a healthcare provider during pregnancy.",
+    "entity": "GASTAT",
+    "language": "en"
+  },
+  {
+    "question": "What was the most common cancer among Saudi males in 2023 according to the NCC Cancer Incidence Report?",
+    "ground_truth": "According to the SHC/NCC Cancer Incidence Report 2023, colorectal cancer was the most common cancer among Saudi males with 1,428 cases, representing 17.6% of all Saudi male cancers.",
+    "entity": "SHC",
+    "language": "en"
+  },
+  {
+    "question": "What was the most common cancer among Saudi females in 2022 according to the NCC Cancer Incidence Report?",
+    "ground_truth": "According to the SHC/NCC Cancer Incidence Report 2022, breast cancer was the most common cancer among Saudi females with 3,280 cases. The dominant subtype was infiltrating duct carcinoma (NOS), accounting for approximately 82.6% of breast cancer cases (2,708 cases).",
+    "entity": "SHC",
+    "language": "en"
+  },
+  {
+    "question": "What is the total number of new cancer cases in Saudi Arabia in 2021 according to the NCC?",
+    "ground_truth": "According to the SHC/NCC Cancer Incidence Report 2021, there were 22,912 total new cancer cases in Saudi Arabia. Saudi nationals accounted for 18,471 cases and non-Saudis for 4,321 cases. Males represented 41.8% (9,555 cases) and females 58.3% (13,357 cases).",
+    "entity": "SHC",
+    "language": "en"
+  },
+  {
+    "question": "What is the out-of-pocket health expenditure per capita in Saudi Arabia according to NHIC?",
+    "ground_truth": "According to NHIC's National Health Accounts reports, the out-of-pocket (OOP) health expenditure per capita in Saudi Arabia was SAR 573 in 2019, SAR 529.5 in 2020, and SAR 578.7 in 2021. OOP spending represented approximately 12% of total health spending in 2019, 11% in 2020, and 10.3% in 2021.",
+    "entity": "NHIC",
+    "language": "en"
+  },
+  {
+    "question": "What share of total health spending is out-of-pocket in Saudi Arabia according to NHIC?",
+    "ground_truth": "According to NHIC's National Health Accounts (KSA Health Accounts 2019–2021 report), out-of-pocket expenditure represented approximately 12% of total health spending in 2019, 11% in 2020, and 10.3% in 2021, showing a declining trend.",
+    "entity": "NHIC",
+    "language": "en"
+  },
+  {
+    "question": "What were the gross health insurance premiums in Saudi Arabia in 2020 according to the Council of Health Insurance?",
+    "ground_truth": "According to the CHI Annual Report 2020, gross health insurance premiums in Saudi Arabia amounted to 22.8 billion Saudi Riyals in 2020, an increase of approximately 1.6% compared to the previous year (22.5 billion SAR in 2019). Total written insurance premiums across all insurance branches reached 38.8 billion SAR in 2020.",
+    "entity": "CCHI",
+    "language": "en"
+  },
+  {
+    "question": "What were the net health insurance claims incurred in Saudi Arabia in 2020 according to CHI?",
+    "ground_truth": "According to the CHI Annual Report 2020, net health insurance claims incurred decreased by 1.9% to reach 17.991 billion Saudi Riyals in 2020, compared to 18.345 billion SAR in 2019. Net written health insurance premiums amounted to 21.9 billion SAR in 2020 compared to 21.6 billion SAR in 2019.",
+    "entity": "CCHI",
+    "language": "en"
+  },
+  {
+    "question": "How many visitor health insurance beneficiaries (tourism and Umrah) were covered in Saudi Arabia in 2023 according to CHI?",
+    "ground_truth": "According to the CHI Annual Report 2023, the number of beneficiaries of health insurance products for visitors to the Kingdom (tourism and Umrah) reached 15,125,538 beneficiaries in 2023, marking a 47% increase from the previous year.",
+    "entity": "CCHI",
+    "language": "en"
+  },
+  {
+    "question": "What was the impact of the Insurance Medicines Guide on generic medicine spending in Saudi Arabia according to CHI?",
+    "ground_truth": "According to the CHI Annual Report 2023, the Insurance Medicines Guide led to spending on generic medicines increasing from 21% to 40% (with 25% being locally produced). The shift to generic medicines and biosimilars resulted in a cost reduction of 318 million Saudi Riyals between September 2022 and June 2023.",
+    "entity": "CCHI",
+    "language": "en"
+  },
+  {
+    "question": "What is the CHI target for health insurance coverage in Saudi Arabia by 2025?",
+    "ground_truth": "According to the CHI Annual Report 2023, the Council expects that imposing mandatory health insurance will lead to an increase in health insurance coverage in the Kingdom to reach 45% by 2025, with an annual increase rate of 2% each year, and to increase total written premiums to 2.4% of non-oil GDP by 2025.",
+    "entity": "CCHI",
+    "language": "en"
+  }
+]

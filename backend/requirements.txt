@@ -1,0 +1,31 @@
+fastapi==0.111.1
+uvicorn[standard]==0.30.1
+pydantic==2.8.2
+pydantic-settings==2.3.4
+
+# AI
+anthropic==0.30.1
+
+# Embeddings (Jina via HTTP + BM25 sparse)
+httpx==0.27.0
+fastembed==0.7.4
+
+# Vector DB
+qdrant-client==1.10.1
+
+# Database (also used by pipeline.catalog which backend imports)
+sqlalchemy==2.0.31
+alembic==1.13.2
+psycopg2-binary==2.9.9
+
+# Cache
+redis==5.0.7
+
+# Auth
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.2.1
+
+# Utils
+python-dotenv==1.0.1
+loguru==0.7.2

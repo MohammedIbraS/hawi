@@ -1,0 +1,19 @@
+# Python venvs (large, platform-specific)
+backend/.venv
+pipeline/.venv
+
+# Node modules
+frontend/node_modules
+frontend/.next
+
+# Cache / data artifacts
+pipeline/downloads
+pipeline/data
+**/__pycache__
+**/*.pyc
+**/*.pyo
+
+# Dev / git files
+.git
+.env.local
+*.md
