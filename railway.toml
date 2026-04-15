@@ -1,11 +1,9 @@
 # Railway config for the backend service.
 # The frontend service uses frontend/railway.toml.
-# Qdrant, Postgres, and Redis are added as Railway plugins/services via the dashboard.
 
 [build]
 builder = "DOCKERFILE"
 dockerfilePath = "backend/Dockerfile"
-buildContext = "."
 
 [deploy]
 healthcheckPath = "/health"
