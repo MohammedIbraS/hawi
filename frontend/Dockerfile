@@ -3,10 +3,6 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci --legacy-peer-deps
 
-# Inject xlsx (pure-JS, no native binaries) on top of the cached install.
-# This avoids a full npm registry download when only xlsx is new.
-COPY node_modules/xlsx ./node_modules/xlsx
-
 FROM node:20-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
