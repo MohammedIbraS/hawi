@@ -209,7 +209,7 @@ class RAGService:
                 doc_type_filter=doc_type_filter,
             )
         except Exception as e:
-            logger.error(f"Retrieval error: {e}")
+            logger.exception(f"Retrieval error: {e}")
             yield 'data: {"type": "error", "content": "Failed to search the knowledge base. Please try again."}\n\n'
             return
 

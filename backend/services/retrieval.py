@@ -131,7 +131,11 @@ class RetrievalService:
 
     def __init__(self):
         settings = get_settings()
-        self.qdrant = AsyncQdrantClient(url=settings.qdrant_url)
+        qdrant_kwargs: dict = {"url": settings.qdrant_url, "timeout": 60}
+        if settings.qdrant_url.startswith("https://"):
+            qdrant_kwargs["https"] = True
+            qdrant_kwargs["verify"] = False
+        self.qdrant = AsyncQdrantClient(**qdrant_kwargs)
         self._http = httpx.AsyncClient(
             timeout=30,
             headers={
