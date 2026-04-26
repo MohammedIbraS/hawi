@@ -1,11 +1,12 @@
 """
 SFDA (Saudi Food and Drug Authority) scraper.
 
-sfda.gov.sa is a Drupal site. Annual reports (2017–2024) are listed on a single
-HTML page with direct PDF links — no JavaScript required, no pagination.
+sfda.gov.sa is a Drupal site. Two discovery strategies:
 
-Discovery strategy: HTML index pages (scrape_config["index_urls"])
-  Primary URL: https://www.sfda.gov.sa/en/annual-report
+1. index_urls — single HTML pages with direct PDF/Excel links (annual reports).
+2. paginated_urls — Drupal views with ?page=N pagination (information_list):
+   https://www.sfda.gov.sa/en/information_list
+   Each page has 9 items; iterate until a page returns no document links.
 """
 import hashlib
 import re
@@ -50,11 +51,13 @@ class SFDAScraper:
         Returns list of Document records created or marked for re-ingestion.
         """
         index_urls: list[str] = self.source.scrape_config.get("index_urls", [])
-        if not index_urls:
-            logger.warning("SFDA: no index_urls in scrape_config — nothing to do")
+        paginated_urls: list[str] = self.source.scrape_config.get("paginated_urls", [])
+
+        if not index_urls and not paginated_urls:
+            logger.warning("SFDA: no index_urls or paginated_urls in scrape_config — nothing to do")
             return []
 
-        logger.info(f"Starting SFDA scrape ({len(index_urls)} index page(s))")
+        logger.info(f"Starting SFDA scrape ({len(index_urls)} index, {len(paginated_urls)} paginated)")
 
         seen: set[str] = set()
         all_links: list[dict] = []
@@ -69,6 +72,14 @@ class SFDAScraper:
                         all_links.append(link)
                 time.sleep(REQUEST_DELAY)
 
+            for base_url in paginated_urls:
+                links = self._fetch_paginated_links(client, base_url)
+                logger.info(f"SFDA paginated {base_url}: found {len(links)} document links")
+                for link in links:
+                    if link["url"] not in seen:
+                        seen.add(link["url"])
+                        all_links.append(link)
+
         logger.info(f"SFDA: {len(all_links)} unique document links total")
 
         new_or_updated: list[Document] = []
@@ -82,6 +93,72 @@ class SFDAScraper:
         self.session.flush()
         logger.info(f"SFDA scrape complete. {len(new_or_updated)} new/updated documents.")
         return new_or_updated
+
+    def _fetch_paginated_links(self, client: httpx.Client, base_url: str) -> list[dict]:
+        """Paginate through a Drupal view (?page=N) and collect all document links."""
+        all_links: list[dict] = []
+        page = 0
+        while True:
+            url = f"{base_url}?page={page}"
+            try:
+                response = client.get(url)
+                response.raise_for_status()
+                html = response.text
+            except httpx.HTTPError as e:
+                logger.warning(f"SFDA: HTTP error fetching {url}: {e}")
+                break
+
+            links = self._parse_information_list(html)
+            if not links:
+                break
+            all_links.extend(links)
+            logger.debug(f"SFDA info_list page={page}: {len(links)} items")
+
+            # Stop if there's no "next page" link in pagination
+            if f"page={page + 1}" not in html:
+                break
+            page += 1
+            time.sleep(REQUEST_DELAY)
+
+        return all_links
+
+    def _parse_information_list(self, html: str) -> list[dict]:
+        """Parse document items from the information_list Drupal view HTML."""
+        import html as html_module
+        links = []
+
+        # Each item: date span, category span, anchor with /sites/default/files/ href
+        item_pattern = re.compile(
+            r'<span[^>]*class="[^"]*date[^"]*"[^>]*>([^<]+)</span>'
+            r'.*?'
+            r'<a\s+href="(/sites/default/files/[^"]+\.(pdf|xlsx?|xls))"[^>]*>([^<]+)</a>',
+            re.IGNORECASE | re.DOTALL,
+        )
+
+        for m in item_pattern.finditer(html):
+            date_str = m.group(1).strip()
+            href = m.group(2)
+            ext = m.group(3).lower()
+            title_raw = html_module.unescape(m.group(4).strip())
+
+            file_url = urljoin(SFDA_BASE_URL, href)
+            doc_type = DocType.EXCEL if ext in ("xlsx", "xls") else DocType.PDF_TEXT
+
+            # Parse publication year from the date string (YYYY-MM-DD or YYYY)
+            year_m = re.search(r"(20\d{2})", date_str)
+            pub_year = year_m.group(1) if year_m else ""
+
+            title_en = title_raw or (f"SFDA Information {pub_year}".strip())
+
+            links.append({
+                "url": file_url,
+                "title_en": title_en,
+                "title_ar": "",
+                "doc_type": doc_type,
+                "publication_date": date_str if re.match(r"\d{4}-\d{2}-\d{2}", date_str) else None,
+            })
+
+        return links
 
     def _fetch_document_links(self, client: httpx.Client, index_url: str) -> list[dict]:
         links = []
@@ -146,6 +223,15 @@ class SFDAScraper:
         file_path = DOWNLOAD_DIR / filename
         file_path.write_bytes(content)
 
+        pub_date = None
+        raw_date = link_info.get("publication_date")
+        if raw_date:
+            try:
+                from datetime import date
+                pub_date = date.fromisoformat(raw_date)
+            except ValueError:
+                pass
+
         doc = Document(
             source_id=self.source.id,
             title_ar=link_info.get("title_ar") or "",
@@ -157,6 +243,7 @@ class SFDAScraper:
             file_size_bytes=len(content),
             ingest_status=IngestStatus.PENDING,
             last_fetched_at=datetime.now(timezone.utc),
+            publication_date=pub_date,
         )
         self.session.add(doc)
         logger.info(f"SFDA: new document: {link_info.get('title_en') or link_info.get('title_ar') or url}")

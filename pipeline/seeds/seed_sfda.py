@@ -23,6 +23,11 @@ SCRAPE_CONFIG = {
         # Annual reports 2017–2024 — direct PDF links, no JS needed
         "https://www.sfda.gov.sa/en/annual-report",
     ],
+    "paginated_urls": [
+        # Regulatory reports: ADE reports, inspection stats, GCP/GMP trends, etc.
+        # Drupal view paginated with ?page=N (9 items/page, iterate until empty)
+        "https://www.sfda.gov.sa/en/information_list",
+    ],
     "file_types": ["pdf", "xlsx", "xls"],
 }
 
